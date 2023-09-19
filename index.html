@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-3 col-sm-12 p-5 mx-auto">
+            <div class="form-outline form-white p-2 d-flex justify-content-between align-items-center flex-column " style="height: 500px;">
+                            <h3>Add Your Product Here</h3>
+                            <input type="text " id="product-name" class="form-control" placeholder="Product Name" />
+                            <input type="text" id="product-des" class="form-control" placeholder="Product Description" />
+                            <input type="text" id="product-rating" class="form-control" placeholder="Rating" />
+                            <input type="text" id="product-category" class="form-control" placeholder="Category" />
+                            <input type="text" id="product-stock" class="form-control" placeholder="Stock" />
+                            <input type="text mt-4" id="product-price" class="form-control" placeholder="Product Price" />
+
+                <input type="submit" class="btn btn-primary" value="Add Product" onclick="addProduct()">
+                <input type="submit" class="btn btn-danger" value="Delete All Products" onclick="deletAll()">
+            </div>
+        </div>
+        <div class="col-md-9 col-sm-12">
+            <section style="background-color: #eee;">
+                <div class="container py-5">
+                    <div class="products row justify-content-evenly">
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    
+    <script src="./script.js"></script>
+</body>
+</html>
